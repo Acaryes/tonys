@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <body>
+    <!-- inicio encabezado -->
+    <header class="header">
+      <!-- LOGO -->
+      <div>
+        <img src="../assets/img/logo.png" />
+      </div>
+      <!-- cierre logo -->
+      <!-- inicio nav -->
+      <nav>
+        <ul>
+          <li class="nav__item"><a href="../index.html"> Home</a></li>
+          <li class="nav__item">
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav__item">
+            <a href="nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav__item"><a href="precios.html">Precios</a></li>
+          <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- cierre nav -->
+    </header>
+    <!-- cierre encabezado -->
+    <!-- inicio contenido -->
+    <main>
+      <div>
+        <h1>Contacto</h1>
+      </div>
+      <!-- Formulario de Contacto -->
+      <form action="#" class="form">
+        <label for="nombre">Nombre: <input type="text" name="nombre" /> </label
+        ><br /><br />
+        <label for="telefono"
+          >Telefono: <input type="text" name="telefono" /> </label
+        ><br /><br />
+        <label for="correo">Correo: <input type="text" name="correo" /> </label
+        ><br /><br />
+        <label
+          >Sexo:
+          <input type="radio" id="hombre" name="sexo" value="hombre" checked />
+          <label for="hombre">Hombre</label>
+          <input type="radio" id="mujer" name="sexo" value="mujer" />
+          <label for="mujer">Mujer</label> </label
+        ><br /><br />
+
+        <label
+          >Fecha de nacimiento:
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01"
+            max="2018-12-31" /></label
+        ><br /><br />
+        <label>Comentarios:</label>
+        <div>
+          <textarea name="textarea" rows="10" cols="50"></textarea>
+        </div>
+        <br />
+        <button class="btn" type="#">Enviar</button>
+      </form>
+    </main>
+    <!-- cierre contenido -->
+    <!-- inicio footer -->
+    <footer class="footer">
+      <!-- LOGO -->
+      <div>
+        <img src="../assets/img/logo.png" />
+      </div>
+      <!-- Redes Sociales -->
+      <div>
+        <h3>Redes Sociales</h3>
+        <hr class="solid" />
+        <div class="container__index">
+          <img src="../assets/img/facebook.png" />
+        </div>
+        <div class="container__index">
+          <img src="../assets/img/twitter.png" />
+        </div>
+        <div class="container__index">
+          <img src="../assets/img/instagram.png" />
+        </div>
+      </div>
+      <!-- Contacto -->
+      <div>
+        <h3>Contacto</h3>
+      </div>
+    </footer>
+  </body>
+</html>
