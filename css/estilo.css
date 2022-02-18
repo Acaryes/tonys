@@ -3,12 +3,9 @@ li {
   margin-left: 15px;
 }
 
-<<<<<<< HEAD
 ul {
   padding-left: 1500px;
 }
-=======
->>>>>>> develop
 .container__index {
   width: 200px;
   height: 120px;
@@ -40,7 +37,6 @@ a {
   color: inherit;
 }
 
-<<<<<<< HEAD
 .main__text {
   font-family: "Poppins";
   margin-left: 500px;
@@ -54,8 +50,6 @@ a {
   width: 25%;
 }
 
-=======
->>>>>>> develop
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins-Regular.ttf");
