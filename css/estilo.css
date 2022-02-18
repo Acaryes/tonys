@@ -3,9 +3,6 @@ li {
   margin-left: 15px;
 }
 
-ul {
-  padding-left: 1500px;
-}
 .container__index {
   width: 200px;
   height: 120px;
@@ -35,19 +32,6 @@ ul {
 
 a {
   color: inherit;
-}
-
-.main__text {
-  font-family: "Poppins";
-  margin-left: 500px;
-  border: 1px solid black;
-}
-
-.image__index {
-  margin-top: -200px;
-  margin-bottom: 10px;
-  padding-top: 60px;
-  width: 25%;
 }
 
 @font-face {
@@ -166,10 +150,10 @@ a {
   margin-right: 20px;
 }
 
-.form{
+.form {
   position: relative;
-    padding: 90px 0 90px 45px;
-    background: #dee1e7;
+  padding: 90px 0 90px 45px;
+  background: #dee1e7;
 }
 
 .form input {
@@ -181,20 +165,21 @@ a {
 }
 
 input {
-  outline:none;
- }
+  outline: none;
+}
 
- .nosotros__img{
-   width: 50%;
-   text-align: center;
-   display: block;
-   margin: 0 auto;
- }
+.nosotros__img {
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
 
- .precios td, precios th {
+.precios td,
+precios th {
   border: 1px solid #ddd;
   padding: 8px;
- }
+}
 
 .precios th {
   padding-top: 12px;
