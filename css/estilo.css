@@ -247,6 +247,29 @@ precios th {
   .social {
     grid-area: 2 / 1 / 3 / 2;
   }
+  .container__nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+  }
+
+  .nosotros__img {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .nosotros__texto {
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: -300px;
+  }
+
+  .nosotros__img {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 300px;
+  }
 }
 
 /* Media Querie Tablet */
@@ -304,22 +327,19 @@ precios th {
   .social {
     grid-area: 2 / 1 / 3 / 2;
   }
+}
 
-  .parent {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(2, 1fr);
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   }
-   
-   .div1 { grid-area: 1 / 1 / 2 / 2; }
-   .div2 { grid-area: 2 / 1 / 3 / 2; }
+.container__nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+}
 
-   .form .contact {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      }
+.nosotros__img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.nosotros__texto {
+  grid-area: 2 / 1 / 3 / 2;
 }
