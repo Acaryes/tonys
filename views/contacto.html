@@ -1,109 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/estilo.css" />
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>Tonys</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <body>
-    <!-- inicio encabezado -->
-    <header class="header">
-      <!-- LOGO -->
-      <div>
-        <img src="../assets/img/logo.png" />
-      </div>
-      <!-- cierre logo -->
-      <!-- inicio nav -->
-      <nav>
-        <ul>
-          <li class="nav__item"><a href="../index.html"> Home</a></li>
-          <li class="nav__item">
-            <a href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav__item">
-            <a href="nosotros.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav__item"><a href="precios.html">Precios</a></li>
-          <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- cierre nav -->
-    </header>
-    <!-- cierre encabezado -->
-    <!-- inicio contenido -->
-    <main>
-      <div>
-        <h1>Contacto</h1>
-      </div>
-      <!-- Formulario de Contacto -->
-      <form action="#" class="form contact">
-        <label for="nombre">Nombre: <input type="text" name="nombre" /> </label
-        ><br /><br />
-        <label for="telefono"
-          >Telefono: <input type="text" name="telefono" /> </label
-        ><br /><br />
-        <label for="correo">Correo: <input type="text" name="correo" /> </label
-        ><br /><br />
-        <label
-          >Sexo:
-          <input type="radio" id="hombre" name="sexo" value="hombre" checked />
-          <label for="hombre">Hombre</label>
-          <input type="radio" id="mujer" name="sexo" value="mujer" />
-          <label for="mujer">Mujer</label> </label
-        ><br /><br />
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-        <label
-          >Fecha de nacimiento:
-          <input
-            type="date"
-            id="start"
-            name="trip-start"
-            value="2018-07-22"
-            min="2018-01-01"
-            max="2018-12-31" /></label
-        ><br /><br />
-        <label>Comentarios:</label>
-        <div>
-          <textarea name="textarea" rows="10" cols="50"></textarea>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../css/estilo.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <!-- Inicio Top Bar -->
+        <div class="top-bar d-none d-md-block">     
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <h2>10:00 - 19:00</h2>
+                                <p>Cerrado los Jueves</p>
+                            </div>
+                            <div class="text">
+                                <h2>+52 (686)3222446</h2>
+                                <p>Agendar Cita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=https://www.instagram.com/tonysmxlibarbershop target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br />
-        <button class="btn" type="#">Enviar</button>
-      </form>
-    </main>
-    <!-- cierre contenido -->
-    <!-- inicio footer -->
-    <footer class="footer">
-      <!-- LOGO -->
-      <div>
-        <img src="../assets/img/logo.png" />
-      </div>
-      <!-- Redes Sociales -->
-      <div>
-        <h3>Redes Sociales</h3>
-        <hr class="solid" />
-        <div class="container__index">
-          <img src="../assets/img/facebook.png" />
+        <!-- Fin Top Bar -->
+
+        <!-- Inicio Navbar -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Barberia <span>Tonys</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="../index.html" class="nav-item nav-link">Home</a>
+                        <a href="../views/servicios.html" class="nav-item nav-link">Servicios</a>
+                        <a href="../views/nosotros.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="../views/precios.html" class="nav-item nav-link">Precios</a>
+                        <a href="../views/contacto.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container__index">
-          <img src="../assets/img/twitter.png" />
+        <!-- Fin NavBar -->
+
+
+        <!-- Inicio Header -->
+        <div class="page-header">
+            <div class="container">
+                    <div class="col-12">
+                        <h2>Contacto</h2>
+                    </div>
+            </div>
         </div>
-        <div class="container__index">
-          <img src="../assets/img/instagram.png" />
-        </div>
-      </div>
-      <!-- Contacto -->
-      <div>
-        <h3>Contacto</h3>
-      </div>
-    </footer>
-  </body>
+        <!-- Final Header -->
+
+
+        <section class="contact-info-area pt-100 pb-70">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <div class="contact-info-box">
+                          <div class="back-icon">
+                              <i class='bx bx-map'></i>
+                          </div>
+                          <div class="icon">
+                              <i class='bx bx-map'></i>
+                          </div>
+                          <h3>Dirección</h3>
+                          <p>San Marino 3236, Villas del Palmar, Mexicali, B.C</p>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="contact-info-box">
+                          <div class="back-icon">
+                              <i class='bx bx-phone-call'></i>
+                          </div>
+                          <div class="icon">
+                              <i class='bx bx-phone-call'></i>
+                          </div>
+                          <h3>Contacto</h3>
+                          <p>Celular: <a href="tel:+52(686) 322-2446	">(686) 322-2446	</a></p>
+                          <p>E-mail: <a href="mailto:acaryes@gmail.com">acaryes@gmail.com</a></p>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                      <div class="contact-info-box">
+                          <div class="back-icon">
+                              <i class='bx bx-time-five'></i>
+                          </div>
+                          <div class="icon">
+                              <i class='bx bx-time-five'></i>
+                          </div>
+                          <h3>Horario</h3>
+                          <p>Lunes - Domingo: 10:00 - 19:00</p>
+                          <p>Jueves: Cerrado</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Contact Info Area -->
+
+      <!-- Start Contact Area -->
+      <section class="contact-area pb-100">
+          <div class="container">
+              <div class="section-title">
+                  <span class="sub-title">Get in Touch</span>
+                  <h2>Ready to Get Started?<span class="overlay"></span></h2>
+                  <p>Your email address will not be published. Required fields are marked *</p>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                      <div class="contact-image" data-tilt>
+                          <img src="../assets/img/contacto.jpg" alt="image">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12">
+                      <div class="contact-form">
+                          <form id="contactForm">
+                              <div class="row">
+                                  <div class="col-lg-12 col-md-6">
+                                      <div class="form-group">
+                                          <input type="text" name="name" class="form-control" id="name" required data-error="Ingrese su nombre" placeholder="Inserte aqui su nombre">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-6">
+                                      <div class="form-group">
+                                          <input type="email" name="email" class="form-control" id="email" required data-error="Ingrese su correo" placeholder="Inserte aqui su correo">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-12">
+                                      <div class="form-group">
+                                          <input type="text" name="phone_number" class="form-control" id="phone_number" required data-error="Ingrese su numero de telefono" placeholder="Inserte aqui su telefono">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-12">
+                                      <div class="form-group">
+                                          <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Ingrese un mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-lg-12 col-md-12">
+                                      <button type="submit" class="default-btn">Enviar</button>
+                                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                      <div class="clearfix"></div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Contact Area -->
+
+
+        <!-- Inicio Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Dirección</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>San Marino 3236, Mexicali, B.C</p>
+                                    <p><i class="fa fa-phone-alt"></i>+52 6863222446</p>
+                                    <p><i class="fa fa-envelope"></i>acaryes@gmail.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Fin Footer -->
+    </body>
 </html>
