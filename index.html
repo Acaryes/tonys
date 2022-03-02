@@ -1,94 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/estilo.css" />
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>Tonys</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <body>
-    <!-- inicio encabezado -->
-    <header class="header">
-      <!-- LOGO -->
-      <div class="image__header">
-        <img src="assets/img/logo.png" />
-      </div>
-      <!-- cierre logo -->
-      <!-- inicio nav -->
-      <nav class="nav"> 
-        <ul>
-          <li class="nav__item"><a href="index.html"> Home</a></li>
-          <li class="nav__item">
-            <a href="views/servicios.html">Servicios</a>
-          </li>
-          <li class="nav__item">
-            <a href="views/nosotros.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav__item"><a href="views/precios.html">Precios</a></li>
-          <li class="nav__item"><a href="views/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- cierre nav -->
-    </header>
-    <!-- cierre encabezado -->
-    <!-- inicio contenido -->
-    <main class="main__container">
-      <div class="main__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-        condimentum lacus vitae enim bibendum mollis. Aliquam aliquet, augue sed
-        pellentesque consectetur, velit orci tincidunt nisl, non venenatis est
-        eros sed sapien. Aliquam pellentesque tincidunt placerat. Quisque turpis
-        turpis, interdum in nunc at, suscipit fermentum odio. Donec sagittis leo
-        ac dolor rutrum eleifend. Sed tincidunt erat nec odio sollicitudin
-        varius. Etiam lacinia neque at ex consequat, eget bibendum ipsum
-        interdum. Phasellus pellentesque ligula vel enim blandit efficitur.
-        Phasellus ornare neque non leo mollis, ut sagittis libero maximus.
-        Vivamus id dictum dui, ut auctor nibh. Suspendisse at erat facilisis,
-        tempor dolor sit amet, auctor augue. Curabitur pretium mollis augue.
-        Maecenas id viverra mauris. Sed augue erat, venenatis a auctor non,
-        imperdiet eu mauris. Proin vel mi elementum, lobortis nulla sed,
-        sagittis libero. Nulla id augue eu sem gravida tincidunt non sit amet
-        lorem.
-      </div>
-      <div class="image__index">
-        <img
-          src="https://media.istockphoto.com/photos/barber-using-scissors-and-comb-picture-id640274128?k=20&m=640274128&s=612x612&w=0&h=XuetWJSNoLnN7f1t0CjGqLVi_P7uxdvuLG5iOvs7yjc="
-        />
-      </div>
-    </main>
-    <!-- cierre contenido -->
-    <!-- inicio footer -->
-    <footer class="footer">
-      <!-- LOGO -->
-      <div class="logo__footer">
-        <img src="assets/img/logo.png" />
-      </div>
-      <!-- Redes Sociales -->
-      <div class="social">
-        <h3>Redes Sociales</h3>
-        <hr class="solid" />
-        <div class="container__index">
-          <img src="assets/img/facebook.png" />
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/estilo.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Inicio Top Bar -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <h2>10:00 - 19:00</h2>
+                                <p>Cerrado los Jueves</p>
+                            </div>
+                            <div class="text">
+                                <h2>+52 (686)3222446</h2>
+                                <p>Agendar Cita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=https://www.instagram.com/tonysmxlibarbershop target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container__index">
-          <img src="assets/img/twitter.png" />
+        <!-- Fin Top Bar -->
+
+        <!-- Inicio Navbar -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Barberia <span>Tonys</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="views/servicios.html" class="nav-item nav-link">Servicios</a>
+                        <a href="views/nosotros.html" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="views/precios.html" class="nav-item nav-link">Precios</a>
+                        <a href="views/contacto.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container__index">
-          <img src="assets/img/instagram.png" />
+        <!-- Fin NavBar -->
+
+
+        <!-- Inicio Header -->
+        <div class="page-header">
+            <div class="container">
+                    <div class="col-12">
+                        <h2>Inicio</h2>
+                    </div>
+            </div>
         </div>
-      </div>
-      <!-- Contacto -->
-      <div>
-        <h3>Contacto</h3>
-      </div>
-    </footer>
-  </body>
+        <!-- Final Header -->
+
+
+        <!-- Inicio Body -->
+        <section class="about-area pb-100">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                      <div class="">
+                          <img src="assets/img/barberia.jpg" alt="image">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12">
+                      <div class="about-content">
+                          <div class="content">
+                              <span class="sub-title">Visitanos</span>
+                              <h2>Disfruta la mejor experiencia de Barberia</h2>
+                            </h2>
+                              <p>Tonys es una barberia establecida desde 1980, dedicada a dar el mejor servicio y estilo de la ciudad a caballero</p>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Fin Body -->
+
+
+        <!-- Inicio Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Dirección</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>San Marino 3236, Mexicali, B.C</p>
+                                    <p><i class="fa fa-phone-alt"></i>+52 6863222446</p>
+                                    <p><i class="fa fa-envelope"></i>acaryes@gmail.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Fin Footer -->
+    </body>
 </html>
